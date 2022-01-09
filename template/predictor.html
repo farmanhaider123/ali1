@@ -11,6 +11,20 @@
     <title>Rain Prediction</title>
 </head>
 <body>
+<div class="navbar">
+  <a href="{{url_for('home')}}">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
     <section id="prediction-form">
         <form class="form" action="/predict", method="POST">
             <h1 class="my-3 text-center">Predictor</h1>
