@@ -18,12 +18,38 @@
      <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-* { background-color:green;
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
- 
-        }
+*.bg-image {
+  /* The image used */
+  background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.sciencenewsforstudents.org%2Fwp-content%2Fuploads%2F2019%2F11%2F860_main_weather_and_prediction.png&imgrefurl=https%3A%2F%2Fwww.sciencenewsforstudents.org%2Farticle%2Fexplainer-weather-and-weather-prediction&tbnid=zOKj0J2IAdLyaM&vet=12ahUKEwjht-_44ab1AhXzrmMGHTJqBowQMygOegUIARCBAg..i&docid=k9oIQN0O8Ha34M&w=860&h=460&itg=1&q=weather%20prediction%20images&ved=2ahUKEwjht-_44ab1AhXzrmMGHTJqBowQMygOegUIARCBAg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
          .navbar {
   overflow: hidden;
   background-color: #333;
